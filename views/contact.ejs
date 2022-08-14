@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Contact</title>
+</head>
+<body>
+    <div class="w-[100%] h-[100vh]">
+        <div class="w-[100%] h-[100vh]  flex justify-center items-center bg-slate-600">
+            <form  class=" w-[70%] flex flex-col gap-2 bg-gray-50 p-5 m-3 rounded hover:scale-105 md:w-[50%] lg:w-[45%] xl:w-[35%]"
+            action="contact" 
+            method="post">
+                <div class="flex flex-col gap-1">
+                    <label 
+                    class="text-[1.1rem]"
+                    for="name">Name</label>
+                    <input 
+                    class="border-2 h-[2.2em] pl-2 rounded md:h-[2.5em] focus:outline-sky-300"
+                    type="text" placeholder="Enter your name">
+                </div>
+                <div class="flex flex-col gap-1">
+                    <label 
+                    class="text-[1.1rem]"
+                    for="email">Email</label>
+                    <input 
+                    class="border-2 h-[2.2em] rounded pl-2 md:h-[2.5em] focus:outline-sky-300"
+                    type="email" placeholder="Enter your email">
+                </div>
+                <div class="flex flex-col gap-1">
+                    <label 
+                    class="text-[1.1rem]"
+                    for="message">Message</label>
+                    <textarea 
+                    class="border-2 h-[5em] rounded pl-2 focus:outline-sky-300 "></textarea>
+                </div>
+                <button 
+                class="bg-gray-500 rounded-lg h-[2em] font-semibold text-white hover:bg-gray-400 hover:text-gray-500"
+                type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
